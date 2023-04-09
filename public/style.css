@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Nova+Round&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+font-family: 'Nova Round', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+/* body */
+body {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+
+}
+
+.nav {
+    /* border: 2px solid red; */
+    width: 100%;
+    color: white;
+    font-size: large;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.nav1 {
+    background-color: rgb(11, 88, 119);
+    /* border: 2px solid yellow;  */
+    display: flex;
+    position: relative;
+    height: 15vh;
+    align-items: center;
+    box-shadow: 0px 6px 5px rgb(24, 128, 128);
+}
+
+.left {
+    position: absolute;
+    left: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid white; */
+    height: 100%;
+}
+
+.right ul li {
+    list-style: none;
+    margin: 10px 15px;
+    /* border: 2px solid pink; */
+    padding: 5px 18px;
+    border-radius: 40%;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.right ul li:hover {
+    background-color: antiquewhite;
+    color: darkblue;
+    cursor: pointer;
+    /* filter: invert(100%); */
+}
+
+.navbar li
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li img
+{
+    margin-right: 10px;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+    height: 80%;
+    width: 60%;
+    /* border: 2px solid greenyellow; */
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+    background-color: burlywood;
+}
+
+.icons
+{
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+}
+.icons:hover
+{
+
+}
+.nav2 {
+    margin: 2px;
+    border-radius: 4px;
+    background-color: rgb(9, 79, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    /* box-shadow: 0px 6px 5px rgb(24, 128, 128); */
+}
+
+.navContent
+{
+    list-style: none;
+    margin: 10px 15px;
+    /* border: 2px solid pink; */
+    padding: 5px 18px;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+.navContent:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 8px;
+
+}
+
+/* CSS of template page ends here */
+/* main conterner box */
+.conatiner {
+    /* height: 100vh; */
+    height: max-content;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    width: 80vw;
+    /* border: 2px solid blue; */
+    /* border-radius: 8px; */
+    /* background-color: rgb(132, 245, 207, 0.7); */
+    background-color: white;
+    /* margin: 25px; */
+    box-shadow: 0px 3px 30px 3px  rgb(24, 128, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* Slider */
+.mySlides{
+    display:none;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.slider
+{
+    margin-top: 25px;
+    position: relative;
+    height: 30vh;
+    width: 95%;
+}
+.btn
+{
+    bottom: 40%;
+    height: 36px;
+    opacity: 0.1;
+    transition: opacity 0.5s;
+    border-radius: 50%;
+    width: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+.btn:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.leftb
+{
+    position: absolute;
+    left: 0px;
+}
+.rightb
+{
+    position: absolute;
+    right: 0px;
+}
+
+/* main */
+.main
+{
+    /* display: flex;
+    flex-direction: column; */
+    width: 95%;
+}
+#services
+{
+    text-align: center;
+    font-size: 70px;
+    margin: 25px;
+    font-weight: bold;
+    font-family: 'Alkatra', cursive;
+}
+.facilities
+{
+    background-color: rgb(249, 243, 236);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid rgb(181, 181, 129);
+    border-radius: 10px;
+
+}
+.tiles
+{
+    height: 70vh;
+    border-radius: 10px;
+    background-color:  rgb(238, 227, 213);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    margin: 20px;
+    transition: transform 0.5s;
+}
+.tiles *
+{
+    margin: 4px;
+}
+.tiles:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.tileimg
+{
+    height: 150px;
+}
+.text
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+
+}
+.explaination
+{
+
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    height: 50vh;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left_foot
+{
+    height: 75%;
+    width: 15%;
+    background-color: white;
+    border: 2px solid blue;
+}
+.mid_foot
+{
+    height: 75%;
+    width: 25%;
+    padding: 10px 10px;
+}
+.mid_foot li
+{
+    list-style: none;
+    margin: 3px;
+    color: white;
+}
+ul .head
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(203, 238, 115);
+}
+.right_foot
+{
+    border: 2px solid green;
+    height: 75%;
+    width: 25%;
+
+}
